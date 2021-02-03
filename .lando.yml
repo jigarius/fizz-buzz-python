@@ -2,7 +2,12 @@ name: Fizz Buzz Python
 services:
   main:
     type: python
+    build:
+      - chmod +x bin/fizzbuzz
 tooling:
   fizzbuzz:
     service: main
     cmd: ./bin/fizzbuzz
+  pylint:
+    service: main
+    cmd: pylint main.py lib test
