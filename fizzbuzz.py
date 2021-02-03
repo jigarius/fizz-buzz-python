@@ -11,25 +11,31 @@ class _Number:
             raise ValueError('Argument must be a positive integer')
         self.integer = integer
 
-    def _is_fizz(self):
+    def is_fizz(self):
         """
         Whether this is a 'fizz' number.
         """
         return self.integer % 3 == 0
 
-    def _is_buzz(self):
+    def is_buzz(self):
         """
         Whether this is a 'buzz' number.
         """
         return self.integer % 5 == 0
 
+    def is_fizzbuzz(self):
+        """
+        Whether this is a 'fizzbuzz' number.
+        """
+        return self.is_fizz() and self.is_buzz()
+
     def __repr__(self) -> str:
         result = ''
 
-        if self._is_fizz():
+        if self.is_fizz():
             result += 'fizz'
 
-        if self._is_buzz():
+        if self.is_buzz():
             result += 'buzz'
 
         if not result:
