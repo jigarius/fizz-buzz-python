@@ -5,15 +5,14 @@ FizzBuzz CLI
 """
 
 import sys
-
-from fizzbuzz import process_range as fizzbuzz_range
+import fizzbuzz
 
 
 def main():
     """
     Main
     """
-    result = fizzbuzz_range(_get_limit())
+    result = fizzbuzz.generate(_get_limit())
     print("\n".join(result))
 
 

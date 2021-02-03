@@ -38,17 +38,13 @@ class _Number:
         return result
 
 
-def _process_number(integer) -> str:
-    return str(_Number(integer))
-
-
-def process_range(till: int) -> typing.List[str]:
+def generate(till: int) -> typing.List[str]:
     """
     Returns a list of FizzBuzz numbers from 1 to limit.
     """
     result = []
 
     for i in range(1, till + 1):
-        result.append(_process_number(i))
+        result.append(str(_Number(i)))
 
     return result
