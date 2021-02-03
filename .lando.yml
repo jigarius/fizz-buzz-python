@@ -8,6 +8,9 @@ tooling:
   fizzbuzz:
     service: main
     cmd: ./bin/fizzbuzz
-  pylint:
+  lint:
     service: main
     cmd: pylint *.py
+  test:
+    service: main
+    cmd: nosetests --rednose
