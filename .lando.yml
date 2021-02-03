@@ -2,3 +2,7 @@ name: Fizz Buzz Python
 services:
   main:
     type: python
+tooling:
+  fizzbuzz:
+    service: main
+    cmd: ./bin/fizzbuzz
