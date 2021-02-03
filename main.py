@@ -6,7 +6,7 @@ FizzBuzz CLI
 
 import sys
 
-from lib.fizzbuzz import process_range as fizzbuzz_range
+from fizzbuzz import process_range as fizzbuzz_range
 
 
 def main():

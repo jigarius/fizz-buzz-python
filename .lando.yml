@@ -10,4 +10,4 @@ tooling:
     cmd: ./bin/fizzbuzz
   pylint:
     service: main
-    cmd: pylint main.py lib test
+    cmd: pylint *.py
