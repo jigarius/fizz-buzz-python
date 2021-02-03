@@ -1,0 +1,4 @@
+name: Fizz Buzz Python
+services:
+  main:
+    type: python
