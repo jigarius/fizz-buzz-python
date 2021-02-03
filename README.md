@@ -7,10 +7,10 @@ A neat command-line application to demonstrate Python syntax.
 **Fizz buzz** is a group word game for children to teach them about division.
 Players take turns to count incrementally, with the following rules:
 
-  * If a number is divisible by `3`, say `fizz`.
-  * If a number is divisible by `5`, say `buzz`.
-  * If a number is divisible by both, say `fizzbuzz`.
-  * If a number is not divisible by either, say the number.
+  * For numbers divisible by `3`, say `fizz`.
+  * For numbers divisible by `5`, say `buzz`.
+  * For numbers is divisible by both, say `fizzbuzz`.
+  * For other numbers, say the number.
 
 ## Example
 
